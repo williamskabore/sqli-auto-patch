@@ -37,17 +37,17 @@ python -m src.main \
   --deployment my-app
 
 🏗 Architecture
-┌─────────────────┐     ┌──────────────────┐     ┌────────────────────┐
-│   sqlmap        │────▶│  Detection Engine│────▶│  Patch Generator   │
-│   (Vulnerability│     │  (src/detector.py│     │  (src/patcher.py)  │
-│    Scanner)     │     │                 │     │                    │
-└─────────────────┘     └──────────────────┘     └────────────────────┘
-                                                         │
-                                                         ▼
-┌─────────────────┐     ┌──────────────────┐     ┌────────────────────┐
-│  Kubernetes API │◀────│  Manifest Gen    │◀────│  Sidecar Config    │
-│  (kubectl patch)│     │  (src/utils.py)  │     │  (OWASP CRS)       │
-└─────────────────┘     └──────────────────┘     └────────────────────┘
+┌─────────────────┐     ┌──────────────────┐     ┌────────────────────┐<br>
+│   sqlmap        │────▶│  Detection Engine│────▶│  Patch Generator   │<br>
+│   (Vulnerability│     │  (src/detector.py│     │  (src/patcher.py)  │<br>
+│    Scanner)     │     │                 │     │                    │<br>
+└─────────────────┘     └──────────────────┘     └────────────────────┘<br>
+                                                         │<br>
+                                                         ▼<br>
+┌─────────────────┐     ┌──────────────────┐     ┌────────────────────┐<br>
+│  Kubernetes API │◀────│  Manifest Gen    │◀────│  Sidecar Config    │<br>
+│  (kubectl patch)│     │  (src/utils.py)  │     │  (OWASP CRS)       │<br>
+└─────────────────┘     └──────────────────┘     └────────────────────┘<br>
 
 📚 Usage Examples
 Basic Detection and Patching
