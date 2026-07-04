@@ -1,5 +1,3 @@
-**Automate SQL Injection Patching in Kubernetes** - Bridge the gap between vulnerability detection and remediation.# sqlmap-auto-patch 🔒
-
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/sqlmap-auto-patch.svg)](https://github.com/yourusername/sqlmap-auto-patch/stargazers)
 [![Docker Pulls](https://img.shields.io/docker/pulls/yourusername/sqlmap-auto-patch.svg)](https://hub.docker.com/r/yourusername/sqlmap-auto-patch)
@@ -38,8 +36,8 @@ python -m src.main \
   --target-url http://vulnerable-app.com \
   --namespace production \
   --deployment my-app
+
 🏗 Architecture
- 
 ┌─────────────────┐     ┌──────────────────┐     ┌────────────────────┐
 │   sqlmap        │────▶│  Detection Engine│────▶│  Patch Generator   │
 │   (Vulnerability│     │  (src/detector.py│     │  (src/patcher.py)  │
@@ -51,6 +49,7 @@ python -m src.main \
 │  Kubernetes API │◀────│  Manifest Gen    │◀────│  Sidecar Config    │
 │  (kubectl patch)│     │  (src/utils.py)  │     │  (OWASP CRS)       │
 └─────────────────┘     └──────────────────┘     └────────────────────┘
+
 📚 Usage Examples
 Basic Detection and Patching
  
