@@ -4,7 +4,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/sqlmap-auto-patch.svg)](https://github.com/yourusername/sqlmap-auto-patch/stargazers)
 [![Docker Pulls](https://img.shields.io/docker/pulls/yourusername/sqlmap-auto-patch.svg)](https://hub.docker.com/r/yourusername/sqlmap-auto-patch)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![CI/CD](https://github.com/yourusername/sqlmap-auto-patch/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/yourusername/sqlmap-auto-patch/actions/workflows/ci-cd.yml)
+[![CI/CD]](https://github.com/yourusername/sqlmap-auto-patch/actions/workflows/ci-cd.yml)
 
 **Automate SQL Injection Patching in Kubernetes** - Bridge the gap between vulnerability detection and remediation.
 
