@@ -25,8 +25,6 @@
 - Kubernetes cluster (1.19+)
 
 ## 🛠 Quick Start
-
-```bash
 # Clone and install
 git clone https://github.com/yourusername/sqli-auto-patch.git
 cd sqlmap-auto-patch
